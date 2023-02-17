@@ -1,0 +1,37 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.shop-container {
+    width: 100%;
+    background: #1e1b1b none repeat scroll 0 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.car-cards {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.card img {
+    width: 30vw;
+}
+
+.info {
+    width: 40%;
+}
