@@ -24,21 +24,30 @@ const cars = [
 
 function App() {
 
-  const [carInCheck, setcarInCheck] = useState("")
 
+
+  const [carInCheck, setcarInCheck] = useState([])
+  const [cart, setcart] = useState([])
   const handleClick = (e) => {
     
     if(e.target.id !== "") {
       for(let i=0; i < cars.length; i++) {
         if(e.target.id === cars[i].name) {
           setcarInCheck(cars[i])
+          addToCart()
         }
       }
     }
 
 
   }
+
+  function addToCart() {
+    setcart((prevCart) => [...prevCart, carInCheck])
+  }
+
   console.log(carInCheck)
+  console.log(cart)
 
   return (
     <BrowserRouter>
