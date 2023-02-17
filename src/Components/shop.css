@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    
 }
 
 .card img {
@@ -34,4 +35,13 @@ body {
 
 .info {
     width: 40%;
+}
+
+.buy {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+h3:hover {
+    color: #f1356d;
 }
