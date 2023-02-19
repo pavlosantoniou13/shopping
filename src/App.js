@@ -11,11 +11,16 @@ import Cart from "./Components/Cart";
 import nineeleven from './Components/assets/911.webp'
 import cayenne from './Components/assets/cayenne.png'
 import boxster from './Components/assets/boxster.png'
+import panamera from './Components/assets/panamera.png'
+import taycan from './Components/assets/taycan.png'
+
 
 const cars = [
-  { src: nineeleven, name: "911 turbo s", price: "180.000$"},
-  { src: cayenne, name: "cayenne", price:"110.000$" },
-  { src: boxster, name: "boxster", }
+  { src: nineeleven, name: "911 turbo s", price: "200.100,00 €"},
+  { src: cayenne, name: "cayenne", price:"115.600,00 €" },
+  { src: boxster, name: "boxster", price:"83.700,00 €" },
+  { src: panamera, name: "panamera", price:"138.100,00 €" },
+  { src: taycan, name: "taycan", price:"92.400,00 €" },
 ]
 
 
