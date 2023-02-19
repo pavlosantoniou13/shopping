@@ -5,7 +5,6 @@ import './styles.css'
 import './Components/cart.css'
 import './Components/shop.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Nav } from "react-bootstrap";
 import { useState } from "react";
 import Shop from "./Components/Shop";
 import Cart from "./Components/Cart";
@@ -14,9 +13,9 @@ import cayenne from './Components/assets/cayenne.png'
 import boxster from './Components/assets/boxster.png'
 
 const cars = [
-  { src: nineeleven, name: "911"},
-  { src: cayenne, name: "cayenne" },
-  { src: boxster, name: "boxster" }
+  { src: nineeleven, name: "911 turbo s", price: "180.000$"},
+  { src: cayenne, name: "cayenne", price:"110.000$" },
+  { src: boxster, name: "boxster", }
 ]
 
 
@@ -24,29 +23,28 @@ const cars = [
 
 function App() {
 
-
-
-  const [carInCheck, setcarInCheck] = useState([])
   const [cart, setcart] = useState([])
+
   const handleClick = (e) => {
     
     if(e.target.id !== "") {
       for(let i=0; i < cars.length; i++) {
         if(e.target.id === cars[i].name) {
-          setcarInCheck(cars[i])
-          addToCart()
+         let car =   cars[i]
+          addToCart(car)
         }
       }
     }
 
-
+    
   }
 
-  function addToCart() {
-    setcart((prevCart) => [...prevCart, carInCheck])
+ 
+  function addToCart(car) {
+    setcart((prevCart) => [...prevCart, car])
   }
 
-  console.log(carInCheck)
+ 
   console.log(cart)
 
   return (
@@ -55,7 +53,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Shop" element={<Shop handleClick={handleClick}   />} />
-          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Cart" element={<Cart cart={cart}  />} />
         </Routes>
       <Footer />  
     

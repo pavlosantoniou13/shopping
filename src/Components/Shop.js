@@ -12,7 +12,7 @@ export default function Shop( props ) {
                 <div className="info">
                     <h1>Porsche 911 turbo s</h1>
                     <p>The Porsche 911 (pronounced Nine Eleven or in German: Neunelfer) is a two-door 2+2 high performance rear-engined sports car introduced in September 1964 by Porsche AG of Stuttgart, Germany. It has a rear-mounted flat-six engine and originally a torsion bar suspension. The car has been continuously enhanced through the years but the basic concept has remained unchanged.[1] The engines were air-cooled until the introduction of the 996 series in 1998.</p>
-                    <h3 className='buy' id='911' onClick={props.handleClick}  >Purchase</h3>
+                    <h3 className='buy' id='911 turbo s' onClick={props.handleClick}  >Purchase</h3>
                     
                 </div>
             </div>
