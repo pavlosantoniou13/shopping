@@ -4,7 +4,7 @@ import Footer from "./Components/Footer";
 import './styles.css'
 import './Components/cart.css'
 import './Components/shop.css'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 import Shop from "./Components/Shop";
@@ -74,7 +74,7 @@ function App() {
     
 
   return (
-    <BrowserRouter>
+    <div>
       <Navbar  />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -83,7 +83,7 @@ function App() {
         </Routes>
       <Footer />  
     
-    </BrowserRouter>
+    </div>
     
     
   );
