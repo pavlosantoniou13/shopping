@@ -6,6 +6,7 @@ import './Components/cart.css'
 import './Components/shop.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import { useEffect } from "react";
 import Shop from "./Components/Shop";
 import Cart from "./Components/Cart";
 import nineeleven from './Components/assets/911.webp'
@@ -38,32 +39,42 @@ function App() {
         if(e.target.id === cars[i].name) {
          let car =   cars[i]
           addToCart(car)
+          
         }
       }
     }
 
-    sub()
+    
   }
 
- 
+  
   function addToCart(car) {
     setcart((prevCart) => [...prevCart, car])
+    
   }
 
-  function sub() {
-
+  function clear(e) {
+    console.log(e.target.id)
+    const newCart = cart.filter((cart) => e.target.id == cart.id)
+    setcart(newCart)
   }
 
- 
-  console.log(cart)
+
+  useEffect(() => {
+    const calculatePrice = cart.reduce((preVal, currentVal) => {
+      return parseFloat(preVal) + parseFloat(currentVal.price)
+    },0)
+    setSubTotal(calculatePrice)
+  });
+    
 
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar  />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Shop" element={<Shop handleClick={handleClick} cars={cars}  />} />
-          <Route path="/Cart" element={<Cart cart={cart}  />} />
+          <Route path="/Cart" element={<Cart cart={cart} subTotal={subTotal}  clear={clear} />} />
         </Routes>
       <Footer />  
     
