@@ -14,7 +14,7 @@ export default function Cart( props ) {
           <div className="card-car">
             <div className="car-button">
               <div className="cart-image"><img src={cart.src} alt="" /></div>
-              <div className="remove"><button id={cart.name}  >Remove</button></div>
+              <div className="remove"><button id={cart.name} onClick={props.removeFromCart} >Remove</button></div>
             </div>
               <div className="items-header">
                 <div className='item' ><p>{cart.name}</p></div>

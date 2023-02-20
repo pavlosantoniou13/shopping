@@ -53,9 +53,14 @@ function App() {
     
   }
 
-  function clear(e) {
-    console.log(e.target.id)
-    const newCart = cart.filter((cart) => e.target.id == cart.id)
+  function clear() {
+    const newCart = []
+    setcart(newCart)
+  }
+
+  function removeFromCart(e) {
+    
+    const newCart = cart.filter((car) => car.name !== e.target.id)
     setcart(newCart)
   }
 
@@ -74,7 +79,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Shop" element={<Shop handleClick={handleClick} cars={cars}  />} />
-          <Route path="/Cart" element={<Cart cart={cart} subTotal={subTotal}  clear={clear} />} />
+          <Route path="/Cart" element={<Cart cart={cart} subTotal={subTotal}  clear={clear}  removeFromCart={removeFromCart} />} />
         </Routes>
       <Footer />  
     
