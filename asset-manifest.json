@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping/static/css/main.1826930e.css",
-    "main.js": "/shopping/static/js/main.dbe91e5b.js",
+    "main.js": "/shopping/static/js/main.971ab1fa.js",
     "static/media/porsche.mp4": "/shopping/static/media/porsche.99ebdb0fe9fc8c87fed9.mp4",
     "static/media/boxster.png": "/shopping/static/media/boxster.ab5a41fb934ab25adb2c.png",
     "static/media/cayenne.png": "/shopping/static/media/cayenne.a965a929ef65ea2aa1be.png",
@@ -15,10 +15,10 @@
     "static/media/cart-shopping-solid.svg": "/shopping/static/media/cart-shopping-solid.92ef1eb8f6760643f59e59cdee8425e2.svg",
     "static/media/bag-shopping-solid.svg": "/shopping/static/media/bag-shopping-solid.a7ea78500011b6611c424cbe5f4a35fe.svg",
     "main.1826930e.css.map": "/shopping/static/css/main.1826930e.css.map",
-    "main.dbe91e5b.js.map": "/shopping/static/js/main.dbe91e5b.js.map"
+    "main.971ab1fa.js.map": "/shopping/static/js/main.971ab1fa.js.map"
   },
   "entrypoints": [
     "static/css/main.1826930e.css",
-    "static/js/main.dbe91e5b.js"
+    "static/js/main.971ab1fa.js"
   ]
 }
