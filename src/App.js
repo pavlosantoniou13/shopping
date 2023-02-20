@@ -20,7 +20,7 @@ const cars = [
   { src: cayenne, name: "cayenne", price:"115.600,00 €" },
   { src: boxster, name: "boxster", price:"83.700,00 €" },
   { src: panamera, name: "panamera", price:"138.100,00 €" },
-  { src: taycan, name: "taycan", price:"92.400,00 €" },
+  { src: taycan, name: "taycan", price:"92.400,00 €" }
 ]
 
 
@@ -29,6 +29,7 @@ const cars = [
 function App() {
 
   const [cart, setcart] = useState([])
+  const [subTotal, setSubTotal] = useState(0)
 
   const handleClick = (e) => {
     
@@ -41,12 +42,16 @@ function App() {
       }
     }
 
-    
+    sub()
   }
 
  
   function addToCart(car) {
     setcart((prevCart) => [...prevCart, car])
+  }
+
+  function sub() {
+
   }
 
  
@@ -57,7 +62,7 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Shop" element={<Shop handleClick={handleClick}   />} />
+          <Route path="/Shop" element={<Shop handleClick={handleClick} cars={cars}  />} />
           <Route path="/Cart" element={<Cart cart={cart}  />} />
         </Routes>
       <Footer />  

@@ -40,7 +40,30 @@ body {
 .buy {
     margin-top: 10px;
     cursor: pointer;
-}
+    
+        --background: #275EFE;
+        --background-hover: #1D4FE1;
+        --text: #fff;
+        --icon: #fff;
+        display: flex;
+        outline: none;
+        cursor: pointer;
+        border: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        border-radius: 11px;
+        line-height: 24px;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 14px;
+        overflow: hidden;
+        color: var(--text);
+        background: var(--b, var(--background));
+        
+        transform: scale(var(--scale, 1)) translateZ(0);
+    }
+
 
 h3:hover {
     color: #f1356d;
@@ -48,4 +71,15 @@ h3:hover {
 
 .info h1 {
     margin-bottom: 10px;
+}
+
+.buy-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buy:hover {
+    
+    transform: scale(1.1);
 }
