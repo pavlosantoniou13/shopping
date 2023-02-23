@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping/static/css/main.1826930e.css",
+    "main.css": "/shopping/static/css/main.23680216.css",
     "main.js": "/shopping/static/js/main.dcba5f5b.js",
     "static/media/porsche.mp4": "/shopping/static/media/porsche.99ebdb0fe9fc8c87fed9.mp4",
     "static/media/boxster.png": "/shopping/static/media/boxster.ab5a41fb934ab25adb2c.png",
@@ -14,11 +14,11 @@
     "index.html": "/shopping/index.html",
     "static/media/cart-shopping-solid.svg": "/shopping/static/media/cart-shopping-solid.92ef1eb8f6760643f59e59cdee8425e2.svg",
     "static/media/bag-shopping-solid.svg": "/shopping/static/media/bag-shopping-solid.a7ea78500011b6611c424cbe5f4a35fe.svg",
-    "main.1826930e.css.map": "/shopping/static/css/main.1826930e.css.map",
+    "main.23680216.css.map": "/shopping/static/css/main.23680216.css.map",
     "main.dcba5f5b.js.map": "/shopping/static/js/main.dcba5f5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.1826930e.css",
+    "static/css/main.23680216.css",
     "static/js/main.dcba5f5b.js"
   ]
 }
