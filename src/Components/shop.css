@@ -62,6 +62,7 @@ body {
         background: var(--b, var(--background));
         
         transform: scale(var(--scale, 1)) translateZ(0);
+        transition: transform 0.15s ease-in-out 0s;
     }
 
 

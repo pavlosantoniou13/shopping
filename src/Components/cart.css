@@ -96,6 +96,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .clear-div {
@@ -125,6 +126,10 @@ body {
     overflow: hidden;
     color: var(--text);
     background: var(--b, var(--background));
-    
+    transition: transform 0.15s ease-in-out 0s;
     transform: scale(var(--scale, 1)) translateZ(0);
+}
+
+.clear:hover {
+    transform: scale(1.1);
 }

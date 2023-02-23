@@ -61,13 +61,14 @@ a {
 }
 
 .nav-item a:hover {
-    color: #f1356d;
+    color: #ff2800 ;
 }
 
 .nav-item {
     display: flex;
     gap: 5px;
     cursor: pointer;
+    transition: transform 0.15s ease-in-out 0s;
 }
 
 .nav-item:hover{
@@ -95,6 +96,7 @@ video {
     display: flex;
     gap: 5px;
     cursor: pointer;
+    
 }
 
 .card h4 {
